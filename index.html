@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas Pendientes</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+
+<h1 class="titulo-principal">Todo App</h1>
+
+<div class="tarjeta">
+  <div class="contenedor-input">
+    <input type="text" id="inputTarea" placeholder="Escribe una nueva tarea..." class="input-tarea">
+    <button id="btnAgregar" class="boton-agregar">+</button>
+  </div>
+
+  <ul id="listaTareas" class="lista-tareas"></ul>
+
+  <div class="contenedor-contadores">
+    <div class="contador">
+      <span id="totalTareas" class="numero-contador">0</span>
+      <span class="etiqueta-contador">Totales</span>
+    </div>
+
+    <div class="contador">
+      <span id="completadasTareas" class="numero-contador completado">0</span>
+      <span class="etiqueta-contador">Completadas</span>
+    </div>
+
+    <div class="contador">
+      <span id="pendientesTareas" class="numero-contador pendiente">0</span>
+      <span class="etiqueta-contador">Pendientes</span>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
